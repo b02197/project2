@@ -19,7 +19,7 @@ var health = 100
 
 //output
 
-console.log("")
+console.log("");
 
 
 
@@ -29,4 +29,4 @@ while (health > 0) {
     health-=15;
 };
     
-console.log("Woot!!! Good job team! Time to roll for loot.")
+console.log("Woot!!! Good job team! Time to roll for loot.");
