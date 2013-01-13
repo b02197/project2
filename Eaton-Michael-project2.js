@@ -5,7 +5,15 @@
 // Project 2
 //
 
+// Variables
 
-
-console.log("ok')
+var leader = "\"Dragon Slayer\ Lunrshift"
+var raidMembers = 10
+var coleader = "JohnyB"
+var boss = "Onxyia"
+var adds = "Whelplings"
+var deaths = 3
+var wipes = 0
+var readyCheck = true
+var health = 100
 
