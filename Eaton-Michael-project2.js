@@ -19,9 +19,14 @@ var health = 100
 
 //output
 
-console.log("");
-
-
+console.log("After we got the required " + raidMembers + ", we are finally ready to go take on " + boss + ".");
+console.log(leader + " initiates a Ready Check.");
+console.log("The Ready Cheack outputs " + readyCheck + ".");
+console.log("Ok" + boss + " has three phases. Phase one will be a simple ground phase. Phase 2 is a sky phase.");
+console.log("In this phase range dps needs to be on " + boss + " and melee needs to be on " + adds + " control.");
+console.log(" In phase 3 " + boss + " in back on the ground she will fear so everyone stay away from the " + adds + " caves."); 
+console.log("Once we get " + boss + " too 0% we win and we get loot.");
+console.log("Ok we are ready and know the fight so let's get her down.")
 
 //while loop
 while (health > 0) {
