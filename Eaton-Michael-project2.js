@@ -17,3 +17,16 @@ var wipes = 0
 var readyCheck = true
 var health = 100
 
+//output
+
+console.log("")
+
+
+
+//while loop
+while (health > 0) {
+    console.log("She is down to " + health + "% health.");
+    health-=15;
+};
+    
+console.log("Woot!!! Good job team! Time to roll for loot.")
