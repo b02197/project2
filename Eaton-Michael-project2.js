@@ -14,9 +14,10 @@ var boss = "Onxyia"
 var adds = "Whelplings"
 var deaths = 3
 var wipes = 0
-var readyCheck = false
+var readyCheck = true
 var health = 100
-var requiredRaiders = 9
+var requiredRaiders = 10
+
 //output
 
 console.log("After we got the required " + raidMembers + ", we are finally ready to go take on " + boss + ".")
@@ -38,7 +39,6 @@ if(readyCheck === false)
     console.log("OK. Whats the hold up " + coleader + "? Why did you hit " + readyCheck + "?")
 };
     
-    
 //while loop 75%
 
 while (health > 75) {
@@ -46,8 +46,7 @@ while (health > 75) {
     health-=5;
 };
     console.log(boss + " down to " + health + " health. She is lifting off.");   
-   
-    
+     
 
 
     
@@ -61,12 +60,14 @@ while (  health > 50) {
 };
     
     console.log("She is down to" + health + "% health. She is landing.");
-    
-    
+
     
 //For loop
 
-//for();
+for (var health = 100; health > 0; health-=5) {
+    console.log("She is down to " + health + "% health.");
+    
+};
 
 
 
