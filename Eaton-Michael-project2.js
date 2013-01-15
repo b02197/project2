@@ -39,21 +39,28 @@ var getKnowFight = function(result){
     return results;
 };
 
+//returned value output
+
 var fullComment = getKnowFight()
 console.log("It looks like the check to see if everyone knows the fight can back " + fullComment + ".");
 
-    
- 
- 
+//Fight explaination
+console.log("Either way I'm going to explain the fight.")
+console.log("Ok" + boss + " has three phases. Phase one will be a simple ground phase. Phase 2 is a sky phase.");
+console.log("In this phase range dps needs to be on " + boss + " and melee needs to be on " + adds + " control.");
+console.log("In phase 3 " + boss + " in back on the ground she will fear so everyone stay away from the " + adds + " caves."); 
+console.log("Once we get " + boss + " down we will roll on loot.");
+
+
 //while loop 75%
 
 while (health > 75) {
     console.log("She is down to " + health + "% health.");
     health-=5;
 };
-    console.log(boss + " down to " + health + " health. She is lifting off.");   
-     
+console.log(boss + " down to " + health + " health. She is lifting off.");   
 
+c
 
     
     
