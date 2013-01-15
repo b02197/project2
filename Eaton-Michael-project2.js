@@ -9,7 +9,7 @@
 
 var leader = "\"Dragon Slayer\" Lunrshift"
 var raidMembers = 10
-var coleader = "JohnyB"
+var coLeader = "JohnyB"
 var boss = "Onxyia"
 var adds = "Whelplings"
 var wipes = 0
@@ -31,7 +31,7 @@ if (readyCheck === true) {
 //boolean expression
 var getKnowFight = function(result){
     var y = true, n = true;
-    var fightCheck = y && ( n || y);
+    var fightCheck = y &&((n && y) || n);
     var results = fightCheck, comment;
     if (results === true) { fightCheck = "True"; }
     else if (results === false) { fightCheck = "false"; }
@@ -42,14 +42,18 @@ var getKnowFight = function(result){
 //returned value output
 
 var fullComment = getKnowFight()
+if (fullComment === true){
 console.log("It looks like the check to see if everyone knows the fight can back " + fullComment + ".");
-
-//Fight explaination
-console.log("Either way I'm going to explain the fight.")
+console.log("Go ahead and pull" + coLeader)
+}else{
+    //Fight explaination for false
+console.log("It looks like someone doesn't know the fight. The check for knowing the fight came back " + fullComment + ".");
 console.log("Ok" + boss + " has three phases. Phase one will be a simple ground phase. Phase 2 is a sky phase.");
 console.log("In this phase range dps needs to be on " + boss + " and melee needs to be on " + adds + " control.");
 console.log("In phase 3 " + boss + " in back on the ground she will fear so everyone stay away from the " + adds + " caves."); 
 console.log("Once we get " + boss + " down we will roll on loot.");
+};
+
 
 
 //while loop 75%
@@ -60,7 +64,6 @@ while (health > 75) {
 };
 console.log(boss + " down to " + health + " health. She is lifting off.");   
 
-c
 
     
     
@@ -101,7 +104,7 @@ for (var i=0, j=members.length; i <j; i++) {
 }else{
     
 //False Procedure
-console.log("OK. Whats the hold up " + coleader + "? Why did you hit " + readyCheck + "?")
+console.log("OK. Whats the hold up " + coLeader + "? Why did you hit " + readyCheck + "?")
 };
 
 
