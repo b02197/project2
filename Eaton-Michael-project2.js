@@ -29,22 +29,18 @@ if (readyCheck === true) {
     
  
 //boolean expression
-//y is if people know the fight.
-//n is if the leader knows the fight.
-
-
-var y = false, n = true
-if(y && ( n || y)) {
-    console.log("Ok. Everyone knows the fight. Let's get started."); // true log
-    
-} else {
-    
-    console.log("Ok. Someone doesn't know the fight.Let's go over the fight.");
-    console.log("Ok" + boss + " has three phases. Phase one will be a simple ground phase. Phase 2 is a sky phase.");
-    console.log("In this phase range dps needs to be on " + boss + " and melee needs to be on " + adds + " control.");
-    console.log("In phase 3 " + boss + " in back on the ground she will fear so everyone stay away from the " + adds + " caves."); 
-    console.log("Once we get " + boss + " down we will roll on loot."); //false log
+var getKnowFight = function(result){
+    var y = true, n = true;
+    var fightCheck = y && ( n || y);
+    var results = fightCheck, comment;
+    if (results === true) { fightCheck = "True"; }
+    else if (results === false) { fightCheck = "false"; }
+  
+    return results;
 };
+
+var fullComment = getKnowFight()
+console.log("It looks like the check to see if everyone knows the fight can back " + fullComment + ".");
 
     
  
