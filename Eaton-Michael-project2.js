@@ -3,6 +3,7 @@
 //Michael Eaton
 //SDI 1301
 //Project 2
+//The fight with Onyxia
 
 
 //Variables
@@ -12,8 +13,6 @@ var raidMembers = 10
 var coLeader = "JohnyB"
 var boss = "Onxyia"
 var adds = "Whelplings"
-var wipes = 0
-var health = 100
 
 //output
 
@@ -38,9 +37,11 @@ getRollers(4);
     
         
 //boolean expression
+
 console.log("Let's see if everyone know this fight.")
+
 var getKnowFight = function(result, comment){
-    var y = true, n = false;
+    var y = true, n = true;
     var fightCheck = y &&((n && y) || n);
     if (fightCheck === true) { result = "True"; comment = "It looks like the check to see if everyone knows the fight can back " + fightCheck + "."; }
     else if (fightCheck === false) { result = "false"; comment = "It looks like someone doesn't know the fight. The check for knowing the fight came back " + fightCheck + "."; }
@@ -53,31 +54,28 @@ var getKnowFight = function(result, comment){
 var fullComment = getKnowFight();
 console.log(fullComment);
 
-console.log("it's a easy fight. i'm sure you can figure it out.");
+console.log("Ok " + coLeader + " go ahead and pull.");
 
 
 
 
 //while loop 75%
-
-while (health > 75) {
-    console.log("She is down to " + health + "% health.");
-    health-=5;
+var getHealth = function(skyPhase){
+    var bossHealth = 4800000
+        while (bossHealth > 0);
+        bossHealth-= 800000
+        console.log("She is down to " + bossHealth + " health left." );
+        if (bossHealth >= 3600000){skyPhase = "She is taking to the sky. Range DPS ready your self!"; }
+        else if (bossHealth >= 1920000){skyPhase = "She is landing again. Burn her down!";}
+        
+        return skyPhase;
 };
-console.log(boss + " down to " + health + " health. She is lifting off.");   
+getHealth("good job on taking " + boss + "'s health down to " + skyPhase + "!");
+
+  
 
 
-    
-    
-    
-//While loop 50%
 
-while (  health > 50) {
-    console.log("she id down to" + health + " % health.");
-     health-=5;
-};
-    
-    console.log("She is down to" + health + "% health. She is landing.");
 
     
 
@@ -103,8 +101,7 @@ for (var i=0, j=members.length; i <j; i++) {
 
 };
 
-
-    
+//h 4800000
 
 
 
