@@ -21,13 +21,22 @@ var health = 100
 console.log("After we got the required " + raidMembers + ", We are finally ready to go take on " + boss + ".");
 console.log("Going to see if everyone is hear.")
 console.log(leader + " initiates a Ready Check.");
-console.log("The Ready Cheack outputs " + readyCheck + ".");
 
-// True Procedure
-if (readyCheck === true) {
-    console.log("Ok we are ready and know the fight so let's get her down.");
+
+//Procedure
+console.log("How many people are here for the mount drop?")
+    var getRollers= function(r){
+        var rollersForMount = r + 1;
+        if (rollersForMount <= 5){
+        console.log("Awsome only " + rollersForMount + " rollers for the mount. Let's see if everyone know the fight.")}
+        else if (rollersForMount > 5){
+        console.log("Oh man. With " + rollersForMount + " rollers. It looks like I might not get my mount tonight. Well let's see if everyone knows the fight.")}
+    };
+getRollers(4);        
+        
     
- 
+    
+        
 //boolean expression
 var getKnowFight = function(result){
     var y = true, n = true;
@@ -45,6 +54,7 @@ var fullComment = getKnowFight()
 if (fullComment === true){
 console.log("It looks like the check to see if everyone knows the fight can back " + fullComment + ".");
 console.log("Go ahead and pull" + coLeader)
+
 }else{
     //Fight explaination for false
 console.log("It looks like someone doesn't know the fight. The check for knowing the fight came back " + fullComment + ".");
@@ -101,11 +111,10 @@ for (var i=0, j=members.length; i <j; i++) {
 
 };
 
-}else{
+
     
-//False Procedure
-console.log("OK. Whats the hold up " + coLeader + "? Why did you hit " + readyCheck + "?")
-};
+
+
 
 
 
