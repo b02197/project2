@@ -8,22 +8,18 @@
 //Variables
 
 var leader = "\"Dragon Slayer\" Lunrshift"
-var raidMembers = 8
+var raidMembers = 10
 var coleader = "JohnyB"
 var boss = "Onxyia"
 var adds = "Whelplings"
 var wipes = 0
 var readyCheck = true
 var health = 100
-var requiredRaiders = 10
 
 //output
 
 console.log("After we got the required " + raidMembers + ", We are finally ready to go take on " + boss + ".");
-console.log("Ok" + boss + " has three phases. Phase one will be a simple ground phase. Phase 2 is a sky phase.");
-console.log("In this phase range dps needs to be on " + boss + " and melee needs to be on " + adds + " control.");
-console.log("In phase 3 " + boss + " in back on the ground she will fear so everyone stay away from the " + adds + " caves."); 
-console.log("Once we get " + boss + " too 0% we win and we get loot.");
+console.log("Going to see if everyone is hear.")
 console.log(leader + " initiates a Ready Check.");
 console.log("The Ready Cheack outputs " + readyCheck + ".");
 
@@ -33,18 +29,26 @@ if (readyCheck === true) {
     
  
 //boolean expression
+//y is if people know the fight.
+//n is if the leader knows the fight.
 
-var p = true, q = false, r = false;
 
-    console.log((p && !q) || (q && r));
+var y = false, n = true
+if(y && ( n || y)) {
+    console.log("Ok. Everyone knows the fight. Let's get started."); // true log
+    
+} else {
+    
+    console.log("Ok. Someone doesn't know the fight.Let's go over the fight.");
+    console.log("Ok" + boss + " has three phases. Phase one will be a simple ground phase. Phase 2 is a sky phase.");
+    console.log("In this phase range dps needs to be on " + boss + " and melee needs to be on " + adds + " control.");
+    console.log("In phase 3 " + boss + " in back on the ground she will fear so everyone stay away from the " + adds + " caves."); 
+    console.log("Once we get " + boss + " down we will roll on loot."); //false log
+};
 
     
  
  
- 
- 
- 
-    
 //while loop 75%
 
 while (health > 75) {
